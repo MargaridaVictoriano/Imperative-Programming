@@ -1,6 +1,6 @@
 #include <ctype.h>
 #include <stdio.h>
-int comprimento(char str[])
+int length(char str[])
 {
   int i=0;
   while(str[i] != '\0')
@@ -9,9 +9,9 @@ int comprimento(char str[])
 }
 
 
-int palindromo(char str1[])
+int palindrome(char str1[])
 {
-  int i=0; int j=comprimento(str1)-1;
+  int i=0; int j=length(str1)-1;
   while(i<j)
   {
     if(str1[i]==str1[j])
@@ -30,6 +30,6 @@ int palindromo(char str1[])
 int main(void)
 {
   char str2[]="ana";
-  printf("%d\n", palindromo(str2));
+  printf("%d\n", palindrome(str2));
 
 }
